@@ -311,11 +311,11 @@ function checkExistingUser() {
 
 // Utility functions
 function generateUserId(email) {
-    return 'user_' + btoa(email).replace(/[^a-zA-Z0-9]/g, '').substring(0, 8);
+    return 'user_' + btoa(email).replace(/[^a-zA-Z0-9]/g, '');
 }
 
 function generateAccountId() {
-    return 'acc_' + Math.random().toString(36).substring(2, 8).toUpperCase();
+    return 'acc_' + Math.random().toString(36).toUpperCase();
 }
 
 // Track scroll depth
